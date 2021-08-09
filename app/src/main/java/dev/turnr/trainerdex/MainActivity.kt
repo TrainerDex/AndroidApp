@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
                     splashScreen.visibility = View.GONE
                     webView.visibility = View.VISIBLE
                 }
-                Log.d("Progress", newProgress.toString())
+//                Log.d("Progress", newProgress.toString())
             }
         }
 
