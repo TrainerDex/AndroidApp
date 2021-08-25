@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="regex_capture_total">Gefangene Pok[ée]mon\\\\n(.+)</string>
+    <string name="regex_pokestops_visited">\"Besuchte\\\\sPok[ée]Stops[;:：]?\\\\n(.+)</string>
+    <string name="regex_start_date">Startdatum\\\\n(.+)</string>
+    <string name="regex_total_xp">Gesamt-EP\\\\n(.+)</string>
+    <string name="regex_travel_km">Gelaufene\\\\sDistanz\\\\n(.+)</string>
+</resources>

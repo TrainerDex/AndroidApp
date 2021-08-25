@@ -1,9 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">TrainerDex</string>
     <string name="regex_capture_total">Pok[ée]mon\\sCaught\\n(.+)</string>
     <string name="regex_pokestops_visited">Pok[ée]Stops\\sVisited[;:：]?\\n(.+)</string>
     <string name="regex_start_date">Start\\sDate:\\n(.+)</string>
     <string name="regex_total_xp">Total\\sXP:\\n(.+)</string>
     <string name="regex_travel_km">Distance Walked\\n(.+)</string>
-
 </resources>
