@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">TrainerDex</string>
+    <string name="app_name" translatable="false">@string/trainerdex_long</string>
+    <string name="trainerdex_long">TrainerDex</string>
+    <string name="trainerdex_short" translatable="false">TDX</string>
+    <string name="error_username_too_short">Minimum $1%d characters.</string>
+    <string name="error_username_too_long">Maximum $1%d characters long.</string>
+    <string name="error_username_invalid_characters">Only letters and numbers are allowed.</string>
+    <string name="error_password_too_short">Minimum $1%d characters.</string>
 </resources>
