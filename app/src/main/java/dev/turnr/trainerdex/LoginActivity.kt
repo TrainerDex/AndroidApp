@@ -2,10 +2,19 @@ package dev.turnr.trainerdex
 
 import android.os.Bundle
 import android.view.View
+import android.webkit.CookieManager
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
+import com.android.volley.Request
+import com.android.volley.Response
+import com.android.volley.toolbox.StringRequest
+import com.android.volley.toolbox.Volley
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
+import java.net.CookieHandler
+import java.net.HttpURLConnection
+import java.net.URL
+import javax.net.ssl.HttpsURLConnection
 
 class LoginActivity : AppCompatActivity() {
     lateinit var etUsername: EditText
@@ -20,7 +29,7 @@ class LoginActivity : AppCompatActivity() {
         initView()
     }
 
-    fun initView() {
+    private fun initView() {
         etUsername = findViewById(R.id.et_username)
         etPassword = findViewById(R.id.et_password)
 
@@ -77,10 +86,15 @@ class LoginActivity : AppCompatActivity() {
             requestParams["password"] = password
             requestParams["remember"] = "on"
 
-            val requestUrl: String = loginUrl
 
-            /// do request
+            val queue = Volley.newRequestQueue(this)
+            val requestUrl = URL(loginUrl)
 
+            val cookieMan = CookieManager.getInstance()
+
+            val conn: HttpsURLConnection = requestUrl.openConnection() as HttpsURLConnection
+
+            println(conn.content.toString())
 
             // 3. Store session cookie
             // Success

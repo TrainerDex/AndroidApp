@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TrainerDex">
         <activity
-            android:name=".WebsiteViewActivity"
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -103,7 +103,7 @@
                 app:layout_constraintWidth_percent="0.7"
                 style="?android:attr/borderlessButtonStyle"
                 android:elevation="2dp"
-                android:onClick="performSignUp"
+                android:onClick="performLogIn"
                 />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
