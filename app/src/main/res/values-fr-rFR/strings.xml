@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="trainerdex_long">TrainerDex</string>
+    <string name="error_username_invalid_characters">N’utilise que des lettres ou des nombres, s’il te plaît.</string>
+</resources>

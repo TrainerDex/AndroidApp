@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="trainerdex_long">TrainerDex</string>
+    <string name="error_username_too_short">อย่างน้อย $1%d ตัวอักษร</string>
+    <string name="error_username_invalid_characters">สามารถใช้ได้แค่ตัวอักษรและตัวเลขเท่านั้น</string>
+    <string name="error_password_too_short">อย่างน้อย $1%d ตัวอักษร</string>
+</resources>
