@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="trainerdex_long">ТраинерДех</string>
+    <string name="trainerdex_long">ТренераДекс</string>
     <string name="error_username_invalid_characters">Разрешены только буквы и цифры.</string>
 </resources>
