@@ -3,9 +3,11 @@
     <color name="red">#ca3755</color>
     <color name="teal">#1fa6aa</color>
     <color name="black">#332e20</color>
-    <color name="white">#f2f2f2</color>
+    <color name="pure_black">#FF000000</color>
+    <color name="off_white">#f2f2f2</color>
+    <color name="pure_white">#FFFFFF</color>
 
-    <color name="ic_launcher_background">@color/white</color>
+    <color name="ic_launcher_background">@color/off_white</color>
     <color name="tabBackgroundColor">@color/red</color>
 
 </resources>

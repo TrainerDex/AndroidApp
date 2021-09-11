@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="dev.turnr.trainerdex">
+    package="dev.turnr.trainerdex"
+    android:installLocation="auto">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -8,6 +9,7 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:logo="@drawable/ic_logo_colour"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TrainerDex">
@@ -21,5 +23,6 @@
             </intent-filter>
         </activity>
     </application>
+
 
 </manifest>
