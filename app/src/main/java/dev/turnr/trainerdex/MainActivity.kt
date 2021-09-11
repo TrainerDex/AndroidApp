@@ -1,56 +1,49 @@
 package dev.turnr.trainerdex
 
 import android.os.Bundle
-import android.util.Log
-import android.view.View
-import android.webkit.CookieManager
-import android.webkit.WebChromeClient
-import android.webkit.WebView
-import android.webkit.WebViewClient
-import android.widget.ImageView
-import android.widget.ProgressBar
 import androidx.appcompat.app.AppCompatActivity
+import androidx.viewpager2.widget.ViewPager2
+import com.google.android.material.tabs.TabLayout
+import dev.turnr.trainerdex.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
-        val webView: WebView = findViewById(R.id.webView)
-        val progressBar: ProgressBar = findViewById(R.id.progressBar)
-        val splashScreen: ImageView = findViewById(R.id.splashScreen)
-        splashScreen.bringToFront()
-
-        webView.webViewClient = WebViewClient()
-        webView.settings.javaScriptEnabled = true
-        webView.settings.domStorageEnabled = true
-
-        CookieManager.getInstance().setAcceptThirdPartyCookies(webView, true)
-        CookieManager.getInstance().setAcceptCookie(true)
-
-        webView.loadUrl("https://trainerdex.app/")
-
-        webView.webChromeClient = object : WebChromeClient() {
-            override fun onProgressChanged(view: WebView?, newProgress: Int) {
-                progressBar.progress = newProgress
-                if (newProgress > 80) {
-                    splashScreen.visibility = View.GONE
-                    webView.visibility = View.VISIBLE
-                }
-//                Log.d("Progress", newProgress.toString())
-            }
-        }
-
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
+        setUpTabBar()
     }
 
-    override fun onBackPressed() {
-        val webView: WebView = findViewById(R.id.webView)
-        if (webView.canGoBack()) {
-            webView.goBack()
-        } else {
-            super.onBackPressed()
-        }
+    private fun setUpTabBar() {
+
+        val adapter = TabPageAdapter(this, binding.tabLayout.tabCount)
+        binding.viewPager.adapter = adapter
+
+        binding.viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
+
+            override fun onPageSelected(position: Int) {
+                binding.tabLayout.selectTab(binding.tabLayout.getTabAt(position))
+            }
+
+        })
+
+        binding.tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
+            override fun onTabSelected(tab: TabLayout.Tab) {
+                binding.viewPager.currentItem = tab.position
+            }
+
+            override fun onTabUnselected(tab: TabLayout.Tab?) {
+            }
+
+            override fun onTabReselected(tab: TabLayout.Tab) {
+                binding.viewPager.currentItem = tab.position
+            }
+
+        })
     }
 }

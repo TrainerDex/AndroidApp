@@ -6,4 +6,7 @@
     <string name="error_username_too_long">Maximum $1%d characters long.</string>
     <string name="error_username_invalid_characters">Only letters and numbers are allowed.</string>
     <string name="error_password_too_short">Minimum $1%d characters.</string>
+    <string name="tabLabelLeaderboard">Leaderboard</string>
+    <string name="tabLabelProfile">Profile</string>
+    <string name="webview_wip_notice">This view is still under construction, so instead it currently shows the relevant page from the website. Sorry.</string>
 </resources>

@@ -4,4 +4,8 @@
     <color name="teal">#1fa6aa</color>
     <color name="black">#332e20</color>
     <color name="white">#f2f2f2</color>
+
+    <color name="ic_launcher_background">@color/white</color>
+    <color name="tabBackgroundColor">@color/red</color>
+
 </resources>

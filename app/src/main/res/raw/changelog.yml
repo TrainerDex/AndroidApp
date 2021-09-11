@@ -1,0 +1,14 @@
+v0.2.0: |
+  <ul>
+    <li>Add Tab Bar</li>
+    <li>Add WebViewTabs for Leaderboard and Profile</li>
+    <li>Change Minimum Requirement to API 24, Android 7.0</li>
+  </ul>
+
+v0.1.1: |
+  <ul>
+    <li>Remove Dark Mode for now</li>
+  </ul>
+
+v0.1.0: |
+  <p>Initial release with basic WebView</p>
