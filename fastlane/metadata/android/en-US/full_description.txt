@@ -1,0 +1,16 @@
+TrainerDex provides leaderboards for your favourite monster hunting game!
+
+Current features:
+- Leaderboards
+- Profiles
+
+Features coming soon:
+- OCR Recognition
+- Deeper Discord integration
+
+TrainerDex only relies on screenshots and does not log into your pocket monster hunter account. There is no risk to your account.
+
+Disclaimer
+TrainerDex is a third party application to provide a sence of competition amugst trainers. It is not affiliated with Pokémon Go, Niantic, Nintendo, The Pokémon Company or Discord.
+
+TrainerDex is open source and provided as is.

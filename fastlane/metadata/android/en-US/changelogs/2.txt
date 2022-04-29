@@ -1,0 +1,1 @@
+- Fix an issue on phones that have Dark Mode enabled where there is a black bar at the top
